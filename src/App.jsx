@@ -103,9 +103,8 @@ function App() {
             </div>
           </div>
           <div className="about_image-wrapper">
-            {/* !TODO ADD PICTURE */}
             <img
-              src="/pic.jpeg"
+              src="/klpic.jpg"
               alt="Me at Kuala Lumpur"
               className="about__img"
             />
@@ -156,8 +155,148 @@ function App() {
               <p className="featured__info">June - July 2023</p>
             </div>
           </div>
+          <div className="featured__img_container">
+            <div className="featured__img-wrapper">
+              <img src="/sc1.png" alt="My app" />
+            </div>
+            <div className="featured__img-wrapper">
+              <img src="/sc2.png" alt="My app" />
+            </div>
+            <div className="featured__img-wrapper">
+              <img src="/sc3.png" alt="My app" />
+            </div>
+            <div>
+              <video controls width="100%" alt="Demo">
+                <source src="/vid.webm" type="video/webm" />
+              </video>
+            </div>
+          </div>
         </section>
-        <section></section>
+        <section className="work container section">
+          <h2 className="work__title">Projects</h2>
+          <p className="work__description">
+            Here are some of the project that I've done recently :
+          </p>
+          <div className="work__container">
+            <h3 className="work__project-title">Blog</h3>
+            <div className="work__img-wrapper  work__image1">
+              <img src="/blogsc.png" alt="My react blog" />
+            </div>
+            <div className="work__project work__content1">
+              <h3 className="work__project-subtitle">Blog</h3>
+              <p className="work__project-description1">
+                A full stack web app project where I created a blog
+              </p>
+              <p className="work__project-description2">
+                I used a stack React, Node and MongoDB while also using the
+                library React Query and the UI Kit Chakra{" "}
+              </p>
+              <a
+                className="btn work__project-btn"
+                href="https://github.com/Firzenax/React-blog"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Git
+              </a>
+            </div>
+
+            <h3 className="work__project-title">OpenAI</h3>
+            <div className="work__img-wrapper  work__image2">
+              <img src="/openaisc.png" alt="My ChatGPT" />
+            </div>
+            <div className="work__project work__content2">
+              <h3 className="work__project-subtitle">OpenAI</h3>
+              <p className="work__project-description1">
+                A full stack web app project where I created a replica of
+                chatGPT
+              </p>
+              <p className="work__project-description2">
+                I used a stack React, Node, Express and the open API of OpenAI
+              </p>
+              <a
+                className="btn work__project-btn"
+                href="https://github.com/Firzenax/openapi"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Git
+              </a>
+            </div>
+            <h3 className="work__project-title">Mern JWT authentificator</h3>
+            <div className="work__img-wrapper  work__image3">
+              <img src="/mernsc.png" alt="My auth app" />
+            </div>
+            <div className="work__project work__content3">
+              <h3 className="work__project-subtitle">
+                Mern JWT authentificator
+              </h3>
+              <p className="work__project-description1">
+                A full stack web app project where I created an authentification
+                service.
+              </p>
+              <p className="work__project-description2">
+                I used a stack React, Node, Express to create an
+                authentification application using the regulation GDPR for the
+                protection of personal data
+              </p>
+              <a
+                className="btn work__project-btn"
+                href="https://github.com/Firzenax/react-mern-auth"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Git
+              </a>
+            </div>
+            <h3 className="work__project-title">Hospital service</h3>
+            <div className="work__img-wrapper  work__image4">
+              <img src="/hospitalsc.png" alt="My SQL architecture" />
+            </div>
+            <div className="work__project work__content4">
+              <h3 className="work__project-subtitle">Hospital service</h3>
+              <p className="work__project-description1">
+                A back end project using the structure of an hospital
+              </p>
+              <p className="work__project-description2">
+                I used a stack Spring java with an SQL database to create all
+                the request necessary for the operation of an hospital
+              </p>
+              <a
+                className="btn work__project-btn"
+                href="https://github.com/Firzenax/HospitalAppAngularSpringSQL"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Git
+              </a>
+            </div>
+            <h3 className="work__project-title">Flutter cross platform app</h3>
+            <div className="work__img-wrapper  work__image5">
+              <img src="/notesc.png" alt="My note app" />
+            </div>
+            <div className="work__project work__content5">
+              <h3 className="work__project-subtitle">
+                Flutter cross platform app
+              </h3>
+              <p className="work__project-description1">
+                A full stack web app project where I created a replica of
+                chatGPT
+              </p>
+              <p className="work__project-description2">
+                I used a stack React, Noden, Express and the open API of OpenAI
+              </p>
+              <a
+                className="btn work__project-btn"
+                href="https://github.com/Firzenax/Flutter-My-Notes"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Git
+              </a>
+            </div>
+          </div>
+        </section>
         <section></section>
       </main>
       <footer></footer>

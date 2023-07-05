@@ -7,6 +7,7 @@ import "../styles/components/header.css";
 import "../styles/components/hero.css";
 import "../styles/components/about.css";
 import "../styles/components/feature.css";
+import "../styles/components/work.css";
 import "../styles/utils.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
