@@ -4,6 +4,8 @@
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  position: relative;
+  z-index: 9999;
 }
 
 .header__menu {
@@ -65,7 +67,7 @@
   }
 
   .header__sun {
-    width: var(--size-xm);
+    width: var(--size-xl);
     height: var(--size-xl);
   }
 

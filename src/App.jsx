@@ -1,57 +1,10 @@
 import "../styles/App.css";
+import HeaderSection from "./components/HeaderSection";
 
 function App() {
   return (
     <>
-      <header className="header container">
-        <nav>
-          <ul className="header__menu">
-            <li>
-              <a href="#about" className="header__link">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#featured" className="header__link">
-                Work
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="header__link">
-                Contact
-              </a>
-            </li>
-            <li className="header__line"></li>
-            <li>
-              <button className="header__sun">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
-                </svg>
-              </button>
-            </li>
-            <li>
-              <a href="#" className="header__resume"></a>
-            </li>
-          </ul>
-          <button className="header__bars">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </nav>
-      </header>
+      <HeaderSection />
       <main>
         <section className="hero container">
           <img src="/pic.jpeg" alt="Profile picture" className="hero__image" />
@@ -68,7 +21,7 @@ function App() {
             Reach out
           </a>
         </section>
-        <section className="about container section">
+        <section id="about" className="about container section">
           <div className="about__content">
             <h2 className="about__title">About</h2>
             <p className="about__description">
@@ -104,13 +57,14 @@ function App() {
           </div>
           <div className="about_image-wrapper">
             <img
+              loading="lazy"
               src="/klpic.jpg"
               alt="Me at Kuala Lumpur"
               className="about__img"
             />
           </div>
         </section>
-        <section className="featured container section">
+        <section id="featured" className="featured container section">
           <h3 className="featured__subtitle">Featured project</h3>
           <div className="featured__wrapper">
             <h2 className="featured__title">3D Apple store</h2>
@@ -157,13 +111,13 @@ function App() {
           </div>
           <div className="featured__img_container">
             <div className="featured__img-wrapper">
-              <img src="/sc1.png" alt="My app" />
+              <img loading="lazy" src="/sc1.png" alt="My app" />
             </div>
             <div className="featured__img-wrapper">
-              <img src="/sc2.png" alt="My app" />
+              <img loading="lazy" src="/sc2.png" alt="My app" />
             </div>
             <div className="featured__img-wrapper">
-              <img src="/sc3.png" alt="My app" />
+              <img loading="lazy" src="/sc3.png" alt="My app" />
             </div>
             <div>
               <video controls width="100%" alt="Demo">
@@ -180,7 +134,7 @@ function App() {
           <div className="work__container">
             <h3 className="work__project-title">Blog</h3>
             <div className="work__img-wrapper  work__image1">
-              <img src="/blogsc.png" alt="My react blog" />
+              <img loading="lazy" src="/blogsc.png" alt="My react blog" />
             </div>
             <div className="work__project work__content1">
               <h3 className="work__project-subtitle">Blog</h3>
@@ -203,7 +157,7 @@ function App() {
 
             <h3 className="work__project-title">OpenAI</h3>
             <div className="work__img-wrapper  work__image2">
-              <img src="/openaisc.png" alt="My ChatGPT" />
+              <img loading="lazy" src="/openaisc.png" alt="My ChatGPT" />
             </div>
             <div className="work__project work__content2">
               <h3 className="work__project-subtitle">OpenAI</h3>
@@ -225,7 +179,7 @@ function App() {
             </div>
             <h3 className="work__project-title">Mern JWT authentificator</h3>
             <div className="work__img-wrapper  work__image3">
-              <img src="/mernsc.png" alt="My auth app" />
+              <img loading="lazy" src="/mernsc.png" alt="My auth app" />
             </div>
             <div className="work__project work__content3">
               <h3 className="work__project-subtitle">
@@ -251,7 +205,11 @@ function App() {
             </div>
             <h3 className="work__project-title">Hospital service</h3>
             <div className="work__img-wrapper  work__image4">
-              <img src="/hospitalsc.png" alt="My SQL architecture" />
+              <img
+                loading="lazy"
+                src="/hospitalsc.png"
+                alt="My SQL architecture"
+              />
             </div>
             <div className="work__project work__content4">
               <h3 className="work__project-subtitle">Hospital service</h3>
@@ -273,7 +231,7 @@ function App() {
             </div>
             <h3 className="work__project-title">Flutter cross platform app</h3>
             <div className="work__img-wrapper  work__image5">
-              <img src="/notesc.png" alt="My note app" />
+              <img loading="lazy" src="/notesc.png" alt="My note app" />
             </div>
             <div className="work__project work__content5">
               <h3 className="work__project-subtitle">
@@ -297,9 +255,27 @@ function App() {
             </div>
           </div>
         </section>
-        <section></section>
+        <section id="contact" className="contact container section">
+          <h2 className="contact__title">Get in touch</h2>
+          <p className="contact__description">
+            If you want to reach me, whether it is for some questions or for
+            some opportunities in the world of web developpement, you will find
+            below a link for my email. I'll get back to you ass soon as possible
+            !!!
+          </p>
+          <a
+            href="mailto:louis.20160437@gmail.com"
+            className="contact__btn btn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Reach out !
+          </a>
+        </section>
       </main>
-      <footer></footer>
+      <footer className="footer container section">
+        <h3 className="footer__title">~ Louis Tran ~</h3>
+      </footer>
     </>
   );
 }
