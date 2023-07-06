@@ -17,7 +17,7 @@
   text-decoration: none;
   letter-spacing: -0.05em;
   background-color: var(--clr-rose);
-  color: #f1f5f9;
+  color: var(--clr-light);
   padding: 0.5em 1em;
   border-radius: 6px;
   box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5), 0 6px rgba(225, 29, 72, 0.5),
@@ -35,7 +35,6 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
