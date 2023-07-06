@@ -47,6 +47,9 @@
   display: none;
   margin-top: 1em;
 }
+.separation {
+  padding: 8px;
+}
 
 @media (min-width: 475px) {
   .work__title {
